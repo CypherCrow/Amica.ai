@@ -1,6 +1,6 @@
 # Amic.ai
 
-This is a website for practing application security and offensive attacks. Run this with ethical reasons.
+This is a website for experimenting with the MEAN stack, and practing application security and offensive attacks. Run this with ethical reasons.
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.0.3.
 
