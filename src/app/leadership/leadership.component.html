@@ -1,4 +1,12 @@
 <div>
-    <label for="name">Leader name: </label>
-    <input id="name" [(ngModel)]="leader.name" placeholder="name"> 
+    <h2>Leadership</h2>
+    <ul class="leadership"> 
+        <li *ngFor="let leader of leadership" 
+            [class.selected]="leader === selectedLeader"
+            (click)="onSelect(leader)">
+            <span class="badge">{{ leader.id }}</span> {{ leader.name }}
+        </li>
+    </ul>
+
+    <app-leader-detail [leader]="selectedLeader"></app-leader-detail>
 </div>

@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { Leader } from '../leader'; 
+import { Leader } from '../leader'
+import { LeaderService } from '../leader.service';
 
 @Component({
   selector: 'app-leadership',
@@ -8,14 +9,22 @@ import { Leader } from '../leader';
 })
 export class LeadershipComponent implements OnInit {
 
-  leader: Leader = {
-    id: 1, 
-    name: 'Tăng Ngọc Hiển'
-  }
+  leadership: Leader[] = [];
+  selectedLeader ? : Leader;
 
-  constructor() { }
+  constructor(private leaderService: LeaderService) { }
 
   ngOnInit(): void {
+    this.getLeaders(); 
+  }
+
+  onSelect(leader: Leader): void {
+    this.selectedLeader = leader;
+  }
+
+  getLeaders(): void {
+    this.leaderService.getLeaders()
+      .subscribe(leadership => this.leadership = leadership);
   }
 
 }

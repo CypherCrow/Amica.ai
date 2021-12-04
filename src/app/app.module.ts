@@ -4,11 +4,13 @@ import { FormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { LeadershipComponent } from './leadership/leadership.component';
+import { LeaderDetailComponent } from './leader-detail/leader-detail.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    LeadershipComponent
+    LeadershipComponent,
+    LeaderDetailComponent
   ],
   imports: [
     BrowserModule, 
