@@ -1,12 +1,10 @@
 <div>
     <h2>Leadership</h2>
     <ul class="leadership"> 
-        <li *ngFor="let leader of leadership" 
-            [class.selected]="leader === selectedLeader"
-            (click)="onSelect(leader)">
-            <span class="badge">{{ leader.id }}</span> {{ leader.name }}
+        <li *ngFor="let leader of leadership">
+            <a routerLink="/leader/{{ leader.id }}">
+                <span class="badge">{{ leader.id }}</span> {{ leader.name }}
+            </a>
         </li>
     </ul>
-
-    <app-leader-detail [leader]="selectedLeader"></app-leader-detail>
 </div>

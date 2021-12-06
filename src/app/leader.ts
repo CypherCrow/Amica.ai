@@ -1,4 +1,4 @@
 export interface Leader {
-    id: number, 
+    id: Number, 
     name: string
 }

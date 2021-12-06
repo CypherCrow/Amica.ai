@@ -16,4 +16,10 @@ export class LeaderService {
     this.messageService.add('LeaderService: fetched leaders'); 
     return leadership; 
   }
+
+  getLeader(id: number): Observable<Leader> {
+    const leader = LEADERSHIP.find(leader => leader.id === id)!; 
+    this.messageService.add(`LeaderService: fetched leader id=${id}`);
+    return of(leader); 
+  }
 }

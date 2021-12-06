@@ -1,5 +1,8 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { Leader } from '../leader'
+import { ActivatedRoute } from '@angular/router';
+import { Location } from '@angular/common'; 
+import { Leader } from '../leader'; 
+import { LeaderService } from '../leader.service'
 
 @Component({
   selector: 'app-leader-detail',
@@ -8,11 +11,22 @@ import { Leader } from '../leader'
 })
 export class LeaderDetailComponent implements OnInit {
 
-  @Input() leader?: Leader; 
+  leader: Leader | undefined; 
 
-  constructor() { }
+  constructor(
+    private route: ActivatedRoute, 
+    private leaderService: LeaderService, 
+    private location: Location
+  ) { }
 
   ngOnInit(): void {
+    this.getLeader(); 
+  }
+
+  getLeader(): void {
+    const id = Number(this.route.snapshot.paramMap.get('id'));
+    this.leaderService.getLeader(id)
+      .subscribe(leader => this.leader = leader);
   }
 
 }
