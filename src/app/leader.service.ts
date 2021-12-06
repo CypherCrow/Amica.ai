@@ -18,7 +18,7 @@ export class LeaderService {
   }
 
   getLeader(id: number): Observable<Leader> {
-    const leader = LEADERSHIP.find(leader => leader.id === id)!; 
+    const leader = LEADERSHIP.find(leader => leader.id === id)!; //'!' == non-null assertion operator  
     this.messageService.add(`LeaderService: fetched leader id=${id}`);
     return of(leader); 
   }
