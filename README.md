@@ -1,4 +1,4 @@
-# Amic.ai
+# Amica.ai
 
 This project is a website developed with the MEAN stack, and is for experimenting with the tech stack and practing application security and offensive attacks. Run this with ethical reasons.
 
