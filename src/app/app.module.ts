@@ -8,6 +8,7 @@ import { LeaderDetailComponent } from './leader-detail/leader-detail.component';
 import { MessagesComponent } from './messages/messages.component';
 import { AppRoutingModule } from './app-routing.module';
 import { DashboardComponent } from './dashboard/dashboard.component';
+import { LeaderListTestComponent } from './leader-list-test/leader-list-test.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { DashboardComponent } from './dashboard/dashboard.component';
     LeadershipComponent,
     LeaderDetailComponent,
     MessagesComponent,
-    DashboardComponent
+    DashboardComponent,
+    LeaderListTestComponent
   ],
   imports: [
     BrowserModule, 

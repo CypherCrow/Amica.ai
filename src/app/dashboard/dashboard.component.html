@@ -1,0 +1,7 @@
+<h2>Leadership</h2>
+<div class="leadership-menu">
+    <a *ngFor="let leader of leadership"
+        routerLink="/leader/{{ leader.id }}">
+        {{ leader.name }}
+    </a>
+</div>
