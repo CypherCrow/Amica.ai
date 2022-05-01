@@ -7,13 +7,15 @@ import { MessagesComponent } from './messages/messages.component';
 import { AppRoutingModule } from './app-routing.module';
 import { NavibarComponent } from './navibar/navibar.component';
 import { CharactersComponent } from './characters/characters.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     MessagesComponent,
     NavibarComponent,
-    CharactersComponent
+    CharactersComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule, 
