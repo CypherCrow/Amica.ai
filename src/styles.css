@@ -2,22 +2,23 @@
 /* Application-wide Styles */
 h1 {
     color: #369;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: system-ui;
     font-size: 250%;
   }
   h2, h3 {
-    color: #444;
-    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(0, 242, 255);
+    font-family: system-ui;
     font-weight: lighter;
   }
   body {
     margin: 2em;
   }
   body, input[type="text"], button {
-    color: #333;
-    font-family: Cambria, Georgia, serif;
+    color: rgb(249, 249, 249);
+    font-family: system-ui;
   }
   /* everywhere else */
   * {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: system-ui; 
+    background-color: navy;
   }
