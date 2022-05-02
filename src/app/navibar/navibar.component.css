@@ -17,7 +17,7 @@ nav {
 }
 
 hr {
-    color: white; 
+    border-top: 1px solid rgb(196, 198, 251); 
 }
 
 a {
