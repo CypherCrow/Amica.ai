@@ -11,7 +11,8 @@ h1 {
     font-weight: lighter;
   }
   body {
-    margin: 2em;
+    margin-top: 2em; 
+    background-color: navy;
   }
   body, input[type="text"], button {
     color: rgb(249, 249, 249);
@@ -20,5 +21,4 @@ h1 {
   /* everywhere else */
   * {
     font-family: system-ui; 
-    background-color: navy;
   }
