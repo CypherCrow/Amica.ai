@@ -9,7 +9,6 @@ import { AppRoutingModule } from './app-routing.module';
 import { NavibarComponent } from './navibar/navibar.component';
 import { CharactersComponent } from './characters/characters.component';
 import { FooterComponent } from './footer/footer.component';
-import { HomepageSectionComponent } from './homepage-section/homepage-section.component';
 import { AboutComponent } from './pages/about/about.component';
 import { LoginComponent } from './pages/login/login.component';
 import { HomepageComponent } from './pages/homepage/homepage.component';
@@ -21,7 +20,6 @@ import { HomepageComponent } from './pages/homepage/homepage.component';
     NavibarComponent,
     CharactersComponent,
     FooterComponent,
-    HomepageSectionComponent,
     AboutComponent, 
     LoginComponent, HomepageComponent
   ],
