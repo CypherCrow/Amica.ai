@@ -21,4 +21,4 @@ h1 {
   /* everywhere else */
   * {
     font-family: system-ui; 
-  }
+  }@import '~mdb-angular-ui-kit/assets/scss/mdb.scss';

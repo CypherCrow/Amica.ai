@@ -6,6 +6,7 @@ footer {
 }
 
 div.footer-main-text {
+    margin-top: 3rem; 
     color: navy;
 }
 
