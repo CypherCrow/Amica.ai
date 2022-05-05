@@ -1,12 +1,13 @@
 footer {
     text-align: center;
     flex-direction: column;
-    background-color: white; 
-    padding: 1.5rem; 
+    background-color: #F7F4EB; 
+    padding: 0.5rem; 
+    margin-top: 3.5rem; 
 }
 
 div.footer-main-text {
-    margin-top: 3rem; 
+    margin-top: 2rem; 
     color: navy;
 }
 
@@ -17,6 +18,7 @@ p {
 div.author-links {
     justify-content: space-evenly;
     align-items: center;
+    margin-bottom: 2rem;
 }
 
 img {

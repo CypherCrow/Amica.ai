@@ -4,3 +4,15 @@ div {
     justify-content: center;
     align-items: center;
 }
+
+div#carousel {
+    margin-top: 3rem;
+}
+
+button {
+    background-color: rgb(203, 53, 53);
+    color: white; 
+    border-radius: 5px; 
+    padding: 5px; 
+    margin-top: 0.7rem; 
+}

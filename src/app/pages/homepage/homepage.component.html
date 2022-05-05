@@ -1,26 +1,32 @@
+<app-navibar></app-navibar>
 <div>
-    <div id="carousel">
-        <mdb-carousel [controls]="true" [indicators]="true">
-            <mdb-carousel-item>
-                <img
-                    src="../../../assets/images/be6918c5d9b9d3807c87f330656b8a41.jpg"
-                    class="d-block w-100"
-                >
-                <div class="carousel-caption d-none d-md-block">
-                    <h5>The Company</h5>
-                    <p>Offering cutting-edge enterprise AI for your business.</p>
+    <div class="uk-slidenav-position" data-uk-slideshow>
+        <ul class="uk-slideshow">
+            <li>
+                <img src="../../../assets/images/09-rede-neural-scaled.jpg" height="800" width="=1000">
+                <div class="uk-overlay-panel uk-overlay-background uk-overlay-fade">
+                    <p>We provide cutting-edge enterprise AI solutions to other companies,<br/>
+                    especially to Fortune 500 companies.</p>
                 </div>
-            </mdb-carousel-item>
-            <mdb-carousel-item>
-                <img
-                    src="../../../assets/images/blog_560.jpg"
-                    class="d-block w-100"
-                >
-                <div class="carousel-caption d-none d-md-block">
-                    <h5>BUT</h5>
-                    <p>There are those that seek to undo our contributions.</p>
+            </li>
+            <li>
+                <img src="../../../assets/images/blog_560.jpg" height="800" width="=1000">
+                <div class="uk-overlay-panel uk-overlay-background uk-overlay-fade">
+                    <p>But cyberattacks are common, and are increasing in destructive potential.</p>
                 </div>
-            </mdb-carousel-item>
-        </mdb-carousel>
+            </li>
+            <li>
+                <img src="../../../assets/images/blog_560.jpg" height="800" width="=1000">
+                <div class="uk-overlay-panel uk-overlay-background uk-overlay-fade">
+                    <p>We need to protect our assets, and you will play a part<br><button routerLink="/portal">START NOW</button></p>
+                </div>
+            </li>
+        </ul>
+        <a href="" class="uk-slidenav uk-slidenav-contrast uk-slidenav-previous" data-uk-slideshow-item="previous"></a>
+        <a href="" class="uk-slidenav uk-slidenav-contrast uk-slidenav-next" data-uk-slideshow-item="next"></a>
+        <ul class="uk-dotnav uk-dotnav-contrast uk-position-bottom uk-flex-center">
+            <li data-uk-slideshow-item="0"><a href=""></a></li>
+            <li data-uk-slideshow-item="1"><a href=""></a></li>
+        </ul>
     </div>
 </div>
