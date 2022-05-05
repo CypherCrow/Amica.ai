@@ -29,6 +29,7 @@ import { MdbTabsModule } from 'mdb-angular-ui-kit/tabs';
 import { MdbTooltipModule } from 'mdb-angular-ui-kit/tooltip';
 import { MdbValidationModule } from 'mdb-angular-ui-kit/validation';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { PortalComponent } from './pages/portal/portal.component';
 
 @NgModule({
   declarations: [
@@ -38,7 +39,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     CharactersComponent,
     FooterComponent,
     AboutComponent, 
-    LoginComponent, HomepageComponent, HowToComponent
+    LoginComponent, HomepageComponent, HowToComponent, PortalComponent
   ],
   imports: [
     BrowserModule, 
@@ -49,6 +50,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
       { path: '', component: HomepageComponent }, 
       { path: 'how-to', component: HowToComponent }, 
       { path: 'about', component: AboutComponent },
+      { path: 'portal', component: PortalComponent },
     ]),
     MdbAccordionModule,
     MdbCheckboxModule,
