@@ -15,6 +15,7 @@ import { HomepageComponent } from './pages/homepage/homepage.component';
 import { HowToComponent } from './pages/how-to/how-to.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { PortalComponent } from './pages/portal/portal.component';
+import { InfosecManageComponent } from './pages/portal/pages/infosec-manage/infosec-manage.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,7 @@ import { PortalComponent } from './pages/portal/portal.component';
     CharactersComponent,
     FooterComponent,
     AboutComponent, 
-    LoginComponent, HomepageComponent, HowToComponent, PortalComponent
+    LoginComponent, HomepageComponent, HowToComponent, PortalComponent, InfosecManageComponent
   ],
   imports: [
     BrowserModule, 
