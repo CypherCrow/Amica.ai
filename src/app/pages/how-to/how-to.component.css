@@ -1,0 +1,25 @@
+div {
+    margin: 5px 5rem 5px 5rem; 
+}
+
+section {
+    margin-top: 3rem;
+}
+
+ a {
+     color: cyan; 
+     text-decoration: none; 
+ }
+
+ a:hover {
+    color: white;
+    background-color: grey;
+    transition-duration: 0.2s;
+    border-radius: 5px; 
+    padding: 5px; 
+    margin: 5px; 
+ }
+
+ a:visited {
+     text-decoration: none;
+ }
