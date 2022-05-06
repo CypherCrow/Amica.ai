@@ -15,9 +15,10 @@ import { HomepageComponent } from './pages/homepage/homepage.component';
 import { HowToComponent } from './pages/how-to/how-to.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { PortalComponent } from './pages/portal/portal.component';
-import { InfosecManageComponent } from './pages/portal/pages/infosec-manage/infosec-manage.component';
+import { InfosecManageComponent } from './pages/infosec-manage/infosec-manage.component';
 import { AlyansComponent } from './amica-apps/alyans/alyans.component';
 import { PrattleComponent } from './amica-apps/prattle/prattle.component';
+import { RegisterComponent } from './pages/register/register.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,7 @@ import { PrattleComponent } from './amica-apps/prattle/prattle.component';
     CharactersComponent,
     FooterComponent,
     AboutComponent, 
-    LoginComponent, HomepageComponent, HowToComponent, PortalComponent, InfosecManageComponent, AlyansComponent, PrattleComponent
+    LoginComponent, HomepageComponent, HowToComponent, PortalComponent, InfosecManageComponent, AlyansComponent, PrattleComponent, RegisterComponent
   ],
   imports: [
     BrowserModule, 
@@ -36,9 +37,13 @@ import { PrattleComponent } from './amica-apps/prattle/prattle.component';
     BrowserAnimationsModule,  
     RouterModule.forRoot([
       { path: '', component: HomepageComponent }, 
+      { path: 'login', component: LoginComponent},
+      { path: 'register', component: RegisterComponent },
       { path: 'how-to', component: HowToComponent }, 
       { path: 'about', component: AboutComponent },
       { path: 'portal', component: PortalComponent },
+      { path: 'apps/alyans', component: AlyansComponent },
+      { path: 'apps/prattle', component: PrattleComponent },
     ]),
   ],
   providers: [],

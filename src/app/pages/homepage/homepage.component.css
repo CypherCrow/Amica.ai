@@ -8,16 +8,3 @@ div {
 div#carousel {
     margin-top: 3rem;
 }
-
-button {
-    background-color: rgb(203, 53, 53);
-    color: white; 
-    border: none; 
-    border-radius: 5px; 
-    padding: 10px; 
-    margin-top: 0.7rem; 
-}
-
-button:hover {
-    background-color:rgb(150, 41, 41)
-}

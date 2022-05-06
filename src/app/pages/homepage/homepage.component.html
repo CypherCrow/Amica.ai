@@ -1,32 +1,36 @@
 <app-navibar></app-navibar>
 <div>
-    <div class="uk-slidenav-position" uk-slideshow>
-        <ul class="uk-slideshow">
-            <li>
+    <div id="homepageCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item">
                 <img src="../../../assets/images/09-rede-neural-scaled.jpg" height="800" width="=1000">
-                <div class="uk-overlay-panel uk-overlay-background uk-overlay-fade">
+                <div class="carousel-caption d-none d-md-block">
                     <p>We provide cutting-edge enterprise AI solutions to other companies,<br/>
                     even Fortune 500 companies.</p>
                 </div>
-            </li>
-            <li>
+            </div>
+            <div class="carousel-item">
                 <img src="../../../assets/images/blog_560.jpg" height="800" width="=1000">
-                <div class="uk-overlay-panel uk-overlay-background uk-overlay-fade">
+                <div class="carousel-caption d-none d-md-block">
                     <p>But cyberattacks are common, and are increasing in destructive potential.</p>
                 </div>
-            </li>
-            <li>
+            </div>
+            <div class="carousel-item">
                 <img src="../../../assets/images/blog_560.jpg" height="800" width="=1000">
-                <div class="uk-overlay-panel uk-overlay-background uk-overlay-fade">
-                    <p>We need to protect our assets, and you will play a part<br><button routerLink="/portal">START NOW</button></p>
+                <div class="carousel-caption d-none d-md-block">
+                    <p>We need to protect our assets, and you will play a part!<br>
+                        <button type="button" class="btn btn-success btn-lg" routerLink="/portal">START NOW</button>
+                    </p>
                 </div>
-            </li>
-        </ul>
-        <a href="" class="uk-slidenav uk-slidenav-contrast uk-slidenav-previous" data-uk-slideshow-item="previous"></a>
-        <a href="" class="uk-slidenav uk-slidenav-contrast uk-slidenav-next" data-uk-slideshow-item="next"></a>
-        <ul class="uk-dotnav uk-dotnav-contrast uk-position-bottom uk-flex-center">
-            <li data-uk-slideshow-item="0"><a href=""></a></li>
-            <li data-uk-slideshow-item="1"><a href=""></a></li>
-        </ul>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#homepageCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#homepageCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
     </div>
 </div>

@@ -1,3 +1,19 @@
-<div>
-    
-</div>
+<div id="login">
+    <form action="">
+        <div class="mb-3s">
+            <label for="username" class="form-label">Username</label>
+            <input class="form-control form-control-lg" type="text" id="username"
+                placeholder="username" [(ngModel)]="username">
+        </div>
+        
+        <div class="mb-3">
+            <label for="password" class="form-label">Password</label>
+            <input class="form-control form-control-lg" type="password"
+                id="password" [(ngModel)]="password">
+        </div>
+    </form>
+    <br>
+    <a href="/register">New user? Register now!</a>
+    <p>or</p>
+    <a href="">Head back to Home</a>
+</div> 

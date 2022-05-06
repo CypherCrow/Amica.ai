@@ -1,4 +1,4 @@
-div#login {
+div#register {
     text-align: center; 
     margin-top: 10%; 
     margin-bottom: 10%; 
@@ -9,12 +9,3 @@ form {
     justify-content: center;
     align-items: center;
 }
-
- a {
-    color: white; 
-    text-decoration: none;
- }
-
- a:hover {
-    text-decoration: underline;
- }

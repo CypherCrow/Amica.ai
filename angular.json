@@ -27,10 +27,12 @@
               "src/assets"
             ],
             "styles": [
+              "./node_modules/bootstrap/dist/css/bootstrap.css", 
               "src/styles.css"
             ],
             "scripts": [
-              "node_modules/chart.js/dist/chart.js"
+              "./node_modules/jquery/dist/jquery.js",
+              "./node_modules/bootstrap/dist/js/bootstrap.js"
             ]
           },
           "configurations": {
@@ -96,13 +98,12 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css", 
-              "./node_modules/uikit/dist/css/uikit.min.css",
-              "./node_modules/uikit/dist/css/uikit-core.min.css"
+              "./node_modules/bootstrap/dist/css/bootstrap.css", 
+              "src/styles.css"
             ],
             "scripts": [
-              "./node_modules/uikit/dist/js/uikit.min.js",
-              "./node_modules/uikit/dist/js/uikit-icons.min.js"
+              "./node_modules/jquery/dist/jquery.js",
+              "./node_modules/bootstrap/dist/js/bootstrap.js"
             ]
           }
         }
