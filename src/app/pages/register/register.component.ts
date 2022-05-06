@@ -11,6 +11,7 @@ export class RegisterComponent implements OnInit {
   email?: String = "";
   password: String = "";  
   passwordConfirm: String = "";
+  readonly passwordRegex: RegExp = /^(?=.*[A-Za-z])(?=.*\d)(?=.*[@$!%*#?&])[A-Za-z\d@$!%*#?&]{8,}$/;
 
   constructor() { }
 
