@@ -1,0 +1,41 @@
+div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.7rem 5.0rem; 
+}
+
+h2 {
+    margin: 0 1.3rem; 
+    float: left; 
+    font-size: 25pt;
+}
+
+nav {
+    float: right; 
+    justify-content: flex-end;
+}
+
+hr {
+    border-top: 1px solid rgb(196, 198, 251); 
+}
+
+a {
+    margin: 0px 1.4rem; 
+    color: cadetblue; 
+    text-decoration: none;
+}
+
+a:hover {
+    transition: 0.3s;
+    color: white; 
+    background-color: grey;
+    border-radius: 5px;
+    padding: 0.9rem;
+    margin: 0.5rem 0.5rem;  
+}
+
+a:visited {
+    text-decoration: none;
+}
+
