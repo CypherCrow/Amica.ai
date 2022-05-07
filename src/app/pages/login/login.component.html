@@ -1,5 +1,5 @@
 <div id="login">
-    <form action="/" (ngSubmit)="handleSubmit($event)">
+    <form [formGroup]="loginForm" (ngSubmit)="loginPlayer()">
         <div class="mb-">
             <label for="username" class="form-label">Username</label>
             <input class="form-control form-control-lg" type="text" id="username"

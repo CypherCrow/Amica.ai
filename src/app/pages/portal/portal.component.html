@@ -4,7 +4,7 @@
     </div>
     <hr>
 
-    <div id="portalCarousel" class="carousel slide" data-bs-ride="carousel">
+    <!-- <div id="portalCarousel" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner">
             <div class="carousel-item">
                 <img src="../../../assets/images/09-rede-neural-scaled.jpg" height="800" width="=1000">
@@ -34,25 +34,24 @@
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Next</span>
         </button>
-    </div>
+    </div> -->
 
-    <div class="corporate-services-section">
+    <div id="corporate-services-section" class="mb-5">
         <h2>CORPORATE SERVICES</h2>
 
-        <div class="container">
-            <div class="row">
-                <div class="col"><a href="apps/alyans">Alyans Email Service</a></div>
-                <div class="col"><a href="apps/prattle">Prattle</a></div>
-                <div class="col"><a routerLink="infosec">Infosec Management</a></div>
-                <div class="col"><a routerLink="apps/prattle">Enterprise Services</a></div>
-                <div class="col"><a routerLink="apps/cybersec-manual">Cybersecurity Manual</a></div>
+        <div id="services-row" class="container">
+            <div class="row mt-3">
+                <a href="../../amica-apps/alyans"><div class="col-md m-3 p-5"><h3 class="bi bi-envelope"></h3>Alyans Email Service</div></a>
+                <a href="../../amica-apps/prattle"><div class="col-md m-3 p-5"><h3 class="bi bi-chat-dotsd"></h3>Prattle</div></a>
+                <a routerLink="infosec"><div class="col-md m-3 p-5">Infosec Management</div></a>
+                <a routerLink="apps/cybersec-manual"><div class="col-md m-3 p-5">Cybersecurity Manual</div></a>
             </div>
         </div>
     </div>
 
-    <div class="uk-flex">
+    <div class="container mb-5">
         <h2>END SESSION</h2>
 
-        <button type="button" class="btn btn-success btn-lg" routerLink="">SEE YOU NEXT TIME</button>
+        <button type="button" class="btn btn-success btn-lg mt-3 mb-3" routerLink="">SEE YOU NEXT TIME</button>
     </div>
 </div>

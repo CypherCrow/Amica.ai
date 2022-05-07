@@ -1,11 +1,10 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { FormsModule } from '@angular/forms'; 
+import { FormsModule, ReactiveFormsModule } from '@angular/forms'; 
 import { RouterModule } from '@angular/router'; 
 import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http'; 
 
 import { AppComponent } from './app.component';
-import { MessagesComponent } from './messages/messages.component';
 import { AppRoutingModule } from './app-routing.module';
 import { NavibarComponent } from './components/navibar/navibar.component';
 import { CharactersComponent } from './components/characters/characters.component';
@@ -20,22 +19,24 @@ import { InfosecManageComponent } from './pages/infosec-manage/infosec-manage.co
 import { AlyansComponent } from './amica-apps/alyans/alyans.component';
 import { PrattleComponent } from './amica-apps/prattle/prattle.component';
 import { RegisterComponent } from './pages/register/register.component';
-import { AuthGuard } from './shared/auth.guard';
 import { UserProfileComponent } from './pages/user-profile/user-profile.component';
+import { AuthGuard } from './shared/auth.guard';
+import { AuthInterceptor } from './shared/authconfig.interceptor'; 
 
 @NgModule({
   declarations: [
     AppComponent,
-    MessagesComponent,
     NavibarComponent,
     CharactersComponent,
     FooterComponent,
     AboutComponent, 
-    LoginComponent, HomepageComponent, HowToComponent, PortalComponent, InfosecManageComponent, AlyansComponent, PrattleComponent, RegisterComponent, UserProfileComponent
+    LoginComponent, HomepageComponent, HowToComponent, PortalComponent, InfosecManageComponent, 
+    AlyansComponent, PrattleComponent, RegisterComponent, UserProfileComponent
   ],
   imports: [
     BrowserModule, 
     FormsModule, 
+    ReactiveFormsModule, 
     AppRoutingModule,
     BrowserAnimationsModule,  
     HttpClientModule, 
@@ -48,12 +49,12 @@ import { UserProfileComponent } from './pages/user-profile/user-profile.componen
       { path: 'portal', component: PortalComponent },
       { path: 'apps/alyans', component: AlyansComponent },
       { path: 'apps/prattle', component: PrattleComponent },
-      { path: 'user-profile/:id', canActivate: [AuthGuard]}
+      { path: 'user-profile/:id', component: UserProfileComponent, canActivate: [AuthGuard]}
     ]),
   ],
   providers: [
     {
-      provide: HTTPO_INTERCEPTORS, 
+      provide: HTTP_INTERCEPTORS, 
       useClass: AuthInterceptor, 
       multi: true,
     }

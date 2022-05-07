@@ -1,12 +1,17 @@
 div {
-    display: flex; 
-    flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-align: center; 
+}
+
+div#services-row {
+    display: inline-block;
+    flex-direction: row;
 }
 
 a {
     color: white; 
+    font-size: 16pt; 
     text-decoration: none;
 }
 
@@ -16,4 +21,13 @@ a:hover {
 
 a:visited {
     text-decoration: none;
+}
+
+.col, .col-md, .col-lg, .col-xl {
+    background-color: rgb(186, 7, 186);
+}
+
+.col:hover, .col-md:hover, .col-lg:hover, .col-xl:hover {
+    background-color: rgb(108, 1, 108);
+    transition-duration: 0.3s;
 }

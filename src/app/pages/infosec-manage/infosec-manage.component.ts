@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { FormBuilder, FormGroup } from '@angular/forms'; 
+import { Router } from '@angular/router'; 
 
 @Component({
   selector: 'app-infosec-manage',
@@ -7,9 +9,24 @@ import { Component, OnInit } from '@angular/core';
 })
 export class InfosecManageComponent implements OnInit {
 
-  constructor() { }
+  infosecManageForm: FormGroup; 
+
+  constructor(
+    public fb: FormBuilder, 
+    public router: Router
+  ) {
+
+    this.infosecManageForm = this.fb.group({
+
+    })
+
+  }
 
   ngOnInit(): void {
+  }
+
+  submitRequest(){
+    
   }
 
 }

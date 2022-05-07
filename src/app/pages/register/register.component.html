@@ -1,27 +1,29 @@
 <div id="register">
-    <form action="">
+    <form [formGroup]="registerForm" (ngSubmit)="registerPlayer()">
         <div class="mb-3">
             <label for="username" class="form-label">Username</label>
             <input class="form-control form-control-lg" type="text" id="username"
-                placeholder="username" [(ngModel)]="username">
+                placeholder="username" formControlName="username">
+        </div>
+
+        <div class="mb-4">
+            <label for="password" class="form-label">First Name</label>
+            <input class="form-control form-control-lg" type="text"
+                id="firstname" formControlName="firstname">
         </div>
 
         <div class="mb-3">
             <label for="password" class="form-label">Email</label>
-            <input class="form-control form-control-lg" type="password"
-                id="password" placeholder="optional" [(ngModel)]="email">
+            <input class="form-control form-control-lg" type="text"
+                id="mobile" placeholder="optional" formControlName="mobile"
+                ngModel pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
         </div>
         
-        <div class="mb-3">
+        <div class="mb-4">
             <label for="password" class="form-label">Password</label>
             <input class="form-control form-control-lg" type="password"
-                id="password" [(ngModel)]="password">
-        </div>
-
-        <div class="mb-4">
-            <label for="password" class="form-label">Confirm Password</label>
-            <input class="form-control form-control-lg" type="password"
-                id="password" [(ngModel)]="passwordConfirm">
+                id="password" formControlName="password"
+                ngModel pattern="(?=.*[A-Za-z])(?=.*\d)(?=.*[@$!%*#?&])[A-Za-z\d@$!%*#?&]{8,}$">
         </div>
 
         <button type="submit" class="btn-lg w-100 btn-success">Register</button>

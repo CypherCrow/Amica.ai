@@ -10,7 +10,7 @@ import { Router } from '@angular/router';
 })
 export class AuthService {
 
-  endpoint: string = "http://localhost:4000/api"'; 
+  endpoint: string = "http://localhost:4000/api"; 
   headers = new HttpHeaders().set('Content-Type', 'application/json');
   currentUser = {};
 
@@ -38,7 +38,7 @@ export class AuthService {
 
   get isLoggedIn(): boolean {
     let authToken = localStorage.getItem('access_token'); 
-    return authToen !== null ? true : false; 
+    return authToken !== null ? true : false; 
   }
 
   doLogout() {
@@ -58,7 +58,7 @@ export class AuthService {
     ); 
   }
 
-  handleError(error: HttpErrorRepsonse) {
+  handleError(error: HttpErrorResponse) {
     let msg = ''; 
     if(error.error instanceof ErrorEvent){
       msg = error.error.message; 
