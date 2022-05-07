@@ -7,10 +7,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class RegisterComponent implements OnInit {
 
-  username: String = "";
+  username!: String = "";
   email?: String = "";
-  password: String = "";  
-  passwordConfirm: String = "";
+  password!: String = "";  
+  passwordConfirm!: String = "";
   readonly passwordRegex: RegExp = /^(?=.*[A-Za-z])(?=.*\d)(?=.*[@$!%*#?&])[A-Za-z\d@$!%*#?&]{8,}$/;
 
   constructor() { }

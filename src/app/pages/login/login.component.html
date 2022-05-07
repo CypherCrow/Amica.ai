@@ -1,19 +1,25 @@
 <div id="login">
     <form action="/" (ngSubmit)="handleSubmit($event)">
-        <div class="mb-3s">
+        <div class="mb-">
             <label for="username" class="form-label">Username</label>
             <input class="form-control form-control-lg" type="text" id="username"
                 placeholder="username">
         </div>
         
-        <div class="mb-3">
+        <div class="mb-4">
             <label for="password" class="form-label">Password</label>
             <input class="form-control form-control-lg" type="password"
                 id="password">
         </div>
+
+        <button type="submit" class="btn-lg w-100 btn-success">Submit</button>
     </form>
     <br>
-    <a href="/register">New user? Register now!</a>
+    <div id="register-section">
+        <a href="/register">New user? Register now!</a>
+    </div>
     <p>or</p>
-    <a href="">Head back to Home</a>
+    <div id="return-home-section">
+        <a href="">Head back to Home</a>
+    </div>
 </div> 

@@ -8,13 +8,19 @@ form {
     display: inline-block;
     justify-content: center;
     align-items: center;
+    margin-bottom: 1.6rem; 
 }
 
  a {
-    color: white; 
+    color: cyan; 
     text-decoration: none;
  }
 
  a:hover {
+    color: white; 
     text-decoration: underline;
  }
+
+ div#register-section {
+    margin-bottom: 10px; 
+}

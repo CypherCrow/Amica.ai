@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms'; 
 import { RouterModule } from '@angular/router'; 
-import { HttpClientModule } from '@angular/common/http'; 
+import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http'; 
 
 import { AppComponent } from './app.component';
 import { MessagesComponent } from './messages/messages.component';
@@ -20,6 +20,8 @@ import { InfosecManageComponent } from './pages/infosec-manage/infosec-manage.co
 import { AlyansComponent } from './amica-apps/alyans/alyans.component';
 import { PrattleComponent } from './amica-apps/prattle/prattle.component';
 import { RegisterComponent } from './pages/register/register.component';
+import { AuthGuard } from './shared/auth.guard';
+import { UserProfileComponent } from './pages/user-profile/user-profile.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +31,7 @@ import { RegisterComponent } from './pages/register/register.component';
     CharactersComponent,
     FooterComponent,
     AboutComponent, 
-    LoginComponent, HomepageComponent, HowToComponent, PortalComponent, InfosecManageComponent, AlyansComponent, PrattleComponent, RegisterComponent
+    LoginComponent, HomepageComponent, HowToComponent, PortalComponent, InfosecManageComponent, AlyansComponent, PrattleComponent, RegisterComponent, UserProfileComponent
   ],
   imports: [
     BrowserModule, 
@@ -46,9 +48,16 @@ import { RegisterComponent } from './pages/register/register.component';
       { path: 'portal', component: PortalComponent },
       { path: 'apps/alyans', component: AlyansComponent },
       { path: 'apps/prattle', component: PrattleComponent },
+      { path: 'user-profile/:id', canActivate: [AuthGuard]}
     ]),
   ],
-  providers: [],
+  providers: [
+    {
+      provide: HTTPO_INTERCEPTORS, 
+      useClass: AuthInterceptor, 
+      multi: true,
+    }
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
