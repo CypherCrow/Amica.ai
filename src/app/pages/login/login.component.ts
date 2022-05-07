@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { FormBuiler } from '@angular/forms'; 
+import { FormBuilder } from '@angular/forms'; 
 
 @Component({
   selector: 'app-login',
@@ -8,17 +8,16 @@ import { FormBuiler } from '@angular/forms';
 })
 export class LoginComponent implements OnInit {
 
-  username: String = "";
-  password: String = ""; 
+  msg: String = ''; 
 
   constructor() { }
 
   ngOnInit(): void {
   }
 
-  handleSubmit(e) {
+  handleSubmit(e: Event) {
     e.preventDefault();
-    alert.(this.msg)
+    alert(this.msg)
   }
 
 }
