@@ -23,7 +23,7 @@
             "polyfills": "src/polyfills.ts",
             "tsConfig": "tsconfig.app.json",
             "assets": [
-              "src/favicon.ico",
+              "src/AmicaAI-Logo.png",
               "src/assets"
             ],
             "styles": [
@@ -94,7 +94,7 @@
             "tsConfig": "tsconfig.spec.json",
             "karmaConfig": "karma.conf.js",
             "assets": [
-              "src/favicon.ico",
+              "src/AmicaAI-Logo.png",
               "src/assets"
             ],
             "styles": [
@@ -105,202 +105,6 @@
               "./node_modules/jquery/dist/jquery.js",
               "./node_modules/bootstrap/dist/js/bootstrap.js"
             ]
-          }
-        }
-      }
-    },
-    "alyans": {
-      "projectType": "application",
-      "schematics": {
-        "@schematics/angular:application": {
-          "strict": true
-        }
-      },
-      "root": "projects/alyans",
-      "sourceRoot": "projects/alyans/src",
-      "prefix": "app",
-      "architect": {
-        "build": {
-          "builder": "@angular-devkit/build-angular:browser",
-          "options": {
-            "outputPath": "dist/alyans",
-            "index": "projects/alyans/src/index.html",
-            "main": "projects/alyans/src/main.ts",
-            "polyfills": "projects/alyans/src/polyfills.ts",
-            "tsConfig": "projects/alyans/tsconfig.app.json",
-            "assets": [
-              "projects/alyans/src/favicon.ico",
-              "projects/alyans/src/assets"
-            ],
-            "styles": [
-              "projects/alyans/src/styles.css"
-            ],
-            "scripts": []
-          },
-          "configurations": {
-            "production": {
-              "budgets": [
-                {
-                  "type": "initial",
-                  "maximumWarning": "500kb",
-                  "maximumError": "1mb"
-                },
-                {
-                  "type": "anyComponentStyle",
-                  "maximumWarning": "2kb",
-                  "maximumError": "4kb"
-                }
-              ],
-              "fileReplacements": [
-                {
-                  "replace": "projects/alyans/src/environments/environment.ts",
-                  "with": "projects/alyans/src/environments/environment.prod.ts"
-                }
-              ],
-              "outputHashing": "all"
-            },
-            "development": {
-              "buildOptimizer": false,
-              "optimization": false,
-              "vendorChunk": true,
-              "extractLicenses": false,
-              "sourceMap": true,
-              "namedChunks": true
-            }
-          },
-          "defaultConfiguration": "production"
-        },
-        "serve": {
-          "builder": "@angular-devkit/build-angular:dev-server",
-          "configurations": {
-            "production": {
-              "browserTarget": "alyans:build:production"
-            },
-            "development": {
-              "browserTarget": "alyans:build:development"
-            }
-          },
-          "defaultConfiguration": "development"
-        },
-        "extract-i18n": {
-          "builder": "@angular-devkit/build-angular:extract-i18n",
-          "options": {
-            "browserTarget": "alyans:build"
-          }
-        },
-        "test": {
-          "builder": "@angular-devkit/build-angular:karma",
-          "options": {
-            "main": "projects/alyans/src/test.ts",
-            "polyfills": "projects/alyans/src/polyfills.ts",
-            "tsConfig": "projects/alyans/tsconfig.spec.json",
-            "karmaConfig": "projects/alyans/karma.conf.js",
-            "assets": [
-              "projects/alyans/src/favicon.ico",
-              "projects/alyans/src/assets"
-            ],
-            "styles": [
-              "projects/alyans/src/styles.css"
-            ],
-            "scripts": []
-          }
-        }
-      }
-    },
-    "prattle": {
-      "projectType": "application",
-      "schematics": {
-        "@schematics/angular:application": {
-          "strict": true
-        }
-      },
-      "root": "projects/prattle",
-      "sourceRoot": "projects/prattle/src",
-      "prefix": "app",
-      "architect": {
-        "build": {
-          "builder": "@angular-devkit/build-angular:browser",
-          "options": {
-            "outputPath": "dist/prattle",
-            "index": "projects/prattle/src/index.html",
-            "main": "projects/prattle/src/main.ts",
-            "polyfills": "projects/prattle/src/polyfills.ts",
-            "tsConfig": "projects/prattle/tsconfig.app.json",
-            "assets": [
-              "projects/prattle/src/favicon.ico",
-              "projects/prattle/src/assets"
-            ],
-            "styles": [
-              "projects/prattle/src/styles.css"
-            ],
-            "scripts": []
-          },
-          "configurations": {
-            "production": {
-              "budgets": [
-                {
-                  "type": "initial",
-                  "maximumWarning": "500kb",
-                  "maximumError": "1mb"
-                },
-                {
-                  "type": "anyComponentStyle",
-                  "maximumWarning": "2kb",
-                  "maximumError": "4kb"
-                }
-              ],
-              "fileReplacements": [
-                {
-                  "replace": "projects/prattle/src/environments/environment.ts",
-                  "with": "projects/prattle/src/environments/environment.prod.ts"
-                }
-              ],
-              "outputHashing": "all"
-            },
-            "development": {
-              "buildOptimizer": false,
-              "optimization": false,
-              "vendorChunk": true,
-              "extractLicenses": false,
-              "sourceMap": true,
-              "namedChunks": true
-            }
-          },
-          "defaultConfiguration": "production"
-        },
-        "serve": {
-          "builder": "@angular-devkit/build-angular:dev-server",
-          "configurations": {
-            "production": {
-              "browserTarget": "prattle:build:production"
-            },
-            "development": {
-              "browserTarget": "prattle:build:development"
-            }
-          },
-          "defaultConfiguration": "development"
-        },
-        "extract-i18n": {
-          "builder": "@angular-devkit/build-angular:extract-i18n",
-          "options": {
-            "browserTarget": "prattle:build"
-          }
-        },
-        "test": {
-          "builder": "@angular-devkit/build-angular:karma",
-          "options": {
-            "main": "projects/prattle/src/test.ts",
-            "polyfills": "projects/prattle/src/polyfills.ts",
-            "tsConfig": "projects/prattle/tsconfig.spec.json",
-            "karmaConfig": "projects/prattle/karma.conf.js",
-            "assets": [
-              "projects/prattle/src/favicon.ico",
-              "projects/prattle/src/assets"
-            ],
-            "styles": [
-              "projects/prattle/src/styles.css"
-            ],
-            "scripts": []
           }
         }
       }
