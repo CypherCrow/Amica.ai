@@ -14,16 +14,6 @@ playerRoute.route('/create').post((req, res, next) => {
     })
 });
 
-playerRoute.route('/').get((req, res) => {
-    Player.find((error, data) => {
-        if(error) {
-            return next(error)
-        } else {
-            res.json(data)
-        }
-    })
-});
-
 playerRoute.route('/read/:id').get((req, res) => {
     Player.findById(req.params.id, (error, data) => {
         if(error) {
