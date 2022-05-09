@@ -66,8 +66,8 @@
     "url": "git+https://github.com/CypherCrow/Amic.ai.git"
   },
   "engines": {
-    "npm": ">=8.5.0", 
-    "node": ">=14.0.0"
+    "npm": "8.5.2", 
+    "node": "14.15.5"
   },
   "keywords": [],
   "author": "",
