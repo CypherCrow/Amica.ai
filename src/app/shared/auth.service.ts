@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { User } from './user'; 
+import { Player } from './player'; 
 import { Observable, throwError } from 'rxjs';
 import { catchError, map } from 'rxjs/operators';
 import { HttpClient, HttpHeaders, HttpErrorResponse } from '@angular/common/http'; 
@@ -16,13 +16,13 @@ export class AuthService {
 
   constructor(private http: HttpClient, public router: Router) { }
 
-  signUp(user: User): Observable<any> {
-    let api = `${this.endpoint}/register-user`;
-    return this.http.post(api, user).pipe(catchError(this.handleError));
+  signUp(player: Player): Observable<any> {
+    let api = `${this.endpoint}/register-player`;
+    return this.http.post(api, player).pipe(catchError(this.handleError));
   }
 
-  signIn(user: User) {
-    return this.http.post<any>(`${this.endpoint}/signin`, user)
+  signIn(player: Player) {
+    return this.http.post<any>(`${this.endpoint}/login`, player)
       .subscribe((res: any) => {
         localStorage.setItem('access_token', res.token);
         this.getUserProfile(res._id).subscribe((res) => {
@@ -49,7 +49,7 @@ export class AuthService {
   }
 
   getUserProfile(id: any): Observable<any> {
-    let api = `${this.endpoint}/user-profile/${id}`;
+    let api = `${this.endpoint}/player-profile/${id}`;
     return this.http.get(api, { headers: this.headers }).pipe(
       map((res) => {
         return res || {}; 

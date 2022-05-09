@@ -1,6 +1,6 @@
 {
   "name": "amica-ai",
-  "version": "0.4.0",
+  "version": "0.5.0",
   "main": "server.js",
   "scripts": {
     "ng": "ng",
@@ -31,15 +31,14 @@
     "bootstrap-icons": "^1.8.1",
     "chart.js": "^3.7.1",
     "dotenv": "^16.0.0",
-    "express": "^4.18.1",
     "jquery": "^3.6.0",
     "jsonwebtoken": "^8.5.1",
-    "mongoose": "^6.3.2",
     "mongoose-unique-validator": "^3.0.0",
     "path": "^0.12.7",
     "popper": "^1.0.1",
     "rxjs": "~7.4.0",
     "stream-chat": "^6.5.1",
+    "stream-chat-angular": "^3.5.0",
     "tslib": "^2.4.0",
     "zone.js": "^0.11.5"
   },
