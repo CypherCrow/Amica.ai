@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+//import { AlyansService } from './alyans.service'; 
 
 @Component({
   selector: 'app-alyans',
@@ -7,9 +8,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AlyansComponent implements OnInit {
 
-  constructor() { }
+  emails: [] = []
+
+  constructor(/* private alyansService: AlyansService */) { }
 
   ngOnInit(): void {
+    //this.emails = this.alyansService.getEmails(); 
   }
 
 }

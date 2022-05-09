@@ -1,10 +1,10 @@
 <div class="container">
-    <div class="row align-items-stretch bg-danger" style="width: 100%">
-      <p class="p-4" style="font-size: 14pt; font-weight: bold;">Alyans</p>
-    </div>
+  <div class="row align-items-stretch bg-danger" style="width: 100%;">
+    <p class="p-4" style="font-size: 14pt; font-weight: bold;">Alyans</p>
+  </div>
     <div class="row align-items-stretch" style="width: 100%;">
       <div id="inbox" class="col d-flex flex-column flex-shrink-0 bg-white" style="width: 75%;">
-        <a href="/" class="d-flex align-items-center flex-shrink-0 p-3 link-dark text-decoration-none border-bottom">
+        <a href="/" class="d-flex align-items-center flex-shrink-0 p-3 link-dark text-decoration-none border-bottom" > <!-- *ngFor="let email in emails"-->
           <svg class="bi me-2" width="30" height="24"><use xlink:href="#bootstrap"></use></svg>
           <span class="fs-5 fw-semibold">Inbox</span>
         </a>
@@ -16,7 +16,7 @@
             </div>
             <div class="col-10 mb-1 small">Some placeholder content in a paragraph below the heading and date.</div>
           </a>
-          <a href="#" class="list-group-item list-group-item-action py-3 lh-tight">
+         <a href="#" class="list-group-item list-group-item-action py-3 lh-tight">
             <div class="d-flex w-100 align-items-center justify-content-between">
               <strong class="mb-1">List group item heading</strong>
               <small class="text-muted">Tues</small>
@@ -29,8 +29,8 @@
               <small class="text-muted">Mon</small>
             </div>
             <div class="col-10 mb-1 small">Some placeholder content in a paragraph below the heading and date.</div>
-          </a>
-        </div>
+          </a> 
+
       </div>
       <div id="email-message-box" class="col-8 d-flex flex-column align-items-stretch flex-shrink-0 bg-white" style="color:black;">
         <div class="p-3">
@@ -38,4 +38,4 @@
         </div>
       </div>
     </div>
-  </div>
+</div>

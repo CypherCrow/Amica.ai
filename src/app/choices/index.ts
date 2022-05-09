@@ -1,4 +1,4 @@
-export const choices: { 
+export const Choices: { 
         type: string, 
         sender: string, 
         subject?: string,
@@ -28,7 +28,14 @@ export const choices: {
                 b: 'Do nothing.'
             }, 
             resultMessages: [
-                `Great job! You still know your stuff after `
+                `Great job! You still know your stuff after your preparation period. We'll be a great team, Aselp!
+                
+                - Andreas
+                `, 
+                `Oof, wrong choice here, buddy. But no worries, your memory might be rusty, so take some time to review.
+                
+                - Andreas
+                `
             ]
         }, 
         {
@@ -70,7 +77,7 @@ export const choices: {
             sender: 'Seok Yeon-hee',
             questionMessageOrMore: [`Hi there`, 
                 `I need your help in thinking of a password, but I forgot the company policy again.`, 
-                `Don't ask why. I'm in a rush to get this latest patch for the Supply Chain Overseer, haha`
+                `Don't ask why. I'm in a rush to get this latest patch for the Supply Chain Overseer, haha`, 
                 `Could you remind me again, if you don't mind?`
             ], 
             choices: {
