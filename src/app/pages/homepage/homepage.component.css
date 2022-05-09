@@ -8,3 +8,8 @@ div {
 div#carousel {
     margin-top: 3rem;
 }
+
+p {
+    font-size: 18pt; 
+    text-shadow: 0 0 3px #FF0000, 0 0 4px #c30000, 0 0 5px darkred, 0 0 10px rgb(102, 0, 0);
+}
