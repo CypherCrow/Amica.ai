@@ -27,7 +27,7 @@ export class AuthService {
         localStorage.setItem('access_token', res.token);
         this.getUserProfile(res._id).subscribe((res) => {
           this.currentUser = res; 
-          this.router.navigate(['user-profile/' + res.msg._id]);
+          this.router.navigate(['player-profile/' + res.msg._id]);
         });
       });
   }

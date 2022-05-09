@@ -1,6 +1,6 @@
 export class Player {
     _id!: String; 
-    name!: String; 
+    username!: String; 
     email!: String; 
     password!: String; 
 }
